@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+<style>
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color:grey;
+}
+
+</style>
+
+<body style="background-color:powderblue;">
+	<h1>Summer Volunteer Events</h1>
+		<p>Event 767:
+          We are looking for volunteers for our upcoming fundraiser event to help raise money for those who lost their businesses during the pandemic.
+		</p>
+
+
+
+<div class="btn-group">
+  <button>Yes, I'd like to volunteer</button>
+  <button>Not interested</button>
+  
+</div>
+
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Great! You are now signed up for Event 767.";
+}
+</script>
+
+
+<script>
+function notFunction() { 
+  document.getElementById("d").innerHTML = "That's OK, maybe next time.";
+}
+</script>
+
+</body>
+</html>
